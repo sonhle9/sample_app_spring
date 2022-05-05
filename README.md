@@ -591,3 +591,19 @@ mysql> SELECT * FROM roles;
 
 mysql> 
 ```
+
+```
+điều kì lạ
+POST http://localhost:8080/api/auth/signin với payload
+{
+  "username": "sminzhz@gmail.com",
+  "email": "sminzhz@gmail.com",
+  "role": "ROLE_ADMIN",
+  "password": "Abc@12345678"
+}
+sẽ nhận được response của http://localhost:8080/api/auth/signin mà đáng ra là phải với payload
+{
+  "email": "sminzhz@gmail.com",
+  "password": "Abc@12345678"
+}
+```
