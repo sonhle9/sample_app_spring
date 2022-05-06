@@ -204,9 +204,9 @@ List of available routes:
 `POST /api/auth/refresh-tokens` - refresh auth tokens\
 
 **User routes**:\
-`GET /api/check/all` - get status app heath if return string "Public Content."\
+`GET /api/check/heath` - get status app heath if return string "I'm Heath."\
 `GET /api/check/user` - get user USER_MODERATOR\
-`GET /api/check/mod` - get user ROLE_MODERATOR\
+`GET /api/check/moderator` - get user ROLE_MODERATOR\
 `GET /api/check/admin` - get user ADMIN_MODERATOR\
 
 ## Error Handling
