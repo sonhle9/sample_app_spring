@@ -35,6 +35,16 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	public AuthTokenFilter authenticationJwtTokenFilter() {
 		return new AuthTokenFilter();
 	}
+	
+	// @Override
+	// public void addCorsMappings(CorsRegistry registry) {
+	// 	registry.addMapping("/v1/**")
+	// 		.allowedOrigins("http://localhost:3000")
+	// 		.allowedMethods("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS", "HEAD")
+	// 			.allowedHeaders("header1", "header2", "header3")
+	// 		.exposedHeaders("header1", "header2")
+	// 		.allowCredentials(true).maxAge(3600);
+	// }
 
 	@Override
 	public void configure(AuthenticationManagerBuilder authenticationManagerBuilder) throws Exception {
