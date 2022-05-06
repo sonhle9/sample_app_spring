@@ -198,16 +198,16 @@ To view the list of available APIs and their specifications, run the server and 
 List of available routes:
 
 **Auth routes**:\
-`POST /api/auth/register` - register\
-`POST /api/auth/login` - login\
-`POST /api/auth/logout` - logout\
-`POST /api/auth/refresh-tokens` - refresh auth tokens\
+`POST /v1/auth/register` - register\
+`POST /v1/auth/login` - login\
+`POST /v1/auth/logout` - logout\
+`POST /v1/auth/refresh-tokens` - refresh auth tokens\
 
 **User routes**:\
-`GET /api/check/heath` - get status app heath if return string "I'm Heath."\
-`GET /api/check/user` - get user USER_MODERATOR\
-`GET /api/check/moderator` - get user ROLE_MODERATOR\
-`GET /api/check/admin` - get user ADMIN_MODERATOR\
+`GET /v1/check/heath` - get status app heath if return string "I'm Heath."\
+`GET /v1/check/user` - get user USER_MODERATOR\
+`GET /v1/check/moderator` - get user ROLE_MODERATOR\
+`GET /v1/check/admin` - get user ADMIN_MODERATOR\
 
 ## Error Handling
 
@@ -594,14 +594,14 @@ mysql>
 
 ```
 điều kì lạ
-POST http://localhost:8080/api/auth/signin với payload
+POST http://localhost:8080/v1/auth/signin với payload
 {
   "username": "sminzhz@gmail.com",
   "email": "sminzhz@gmail.com",
   "role": "ROLE_ADMIN",
   "password": "Abc@12345678"
 }
-sẽ nhận được response của http://localhost:8080/api/auth/signin mà đáng ra là phải với payload
+sẽ nhận được response của http://localhost:8080/v1/auth/signin mà đáng ra là phải với payload
 {
   "email": "sminzhz@gmail.com",
   "password": "Abc@12345678"
